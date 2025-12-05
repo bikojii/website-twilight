@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кто ты из Сумерек? - Тест</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="test.css">
+   
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/source/favicon.png" alt="Сага Сумерки" class="favicon">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="characters.html">Персонажи</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="guide.html">Справочник</a></li>
+                    <li><a href="test.html" class="active">Тест</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="quiz-hero">
+            <div class="quiz-hero-content">
+                <h1>Кто ты из Сумерек?</h1>
+                <p>Ответь на 5 вопросов и узнай, какому персонажу ты соответствуешь!</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="quiz-container">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                    <div class="progress-text" id="progress-text">Вопрос 1 из 5</div>
+                </div>
+
+                <div class="question active" id="question1">
+                    <h3>Какой твой идеальный вечер?</h3>
+                    <div class="options">
+                        <div class="option">Тихое чтение книг при свечах</div>
+                        <div class="option">Прогулка по ночному лесу</div>
+                        <div class="option">Вечеринка с друзьями</div>
+                        <div class="option">Романтическое свидание</div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn next-btn" id="next1" disabled>Далее</button>
+                    </div>
+                </div>
+
+                <div class="question" id="question2">
+                    <h3>Какую сверхспособность ты бы хотел(а) иметь?</h3>
+                    <div class="options">
+                        <div class="option">Чтение мыслей</div>
+                        <div class="option">Предвидение будущего</div>
+                        <div class="option">Сверхсилу и скорость</div>
+                        <div class="option">Превращение в волка</div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn" id="prev2">Назад</button>
+                        <button class="btn next-btn" id="next2" disabled>Далее</button>
+                    </div>
+                </div>
+
+                <div class="question" id="question3">
+                    <h3>Твой стиль в одежде?</h3>
+                    <div class="options">
+                        <div class="option">Классический и элегантный</div>
+                        <div class="option">Удобный и практичный</div>
+                        <div class="option">Спортивный и свободный</div>
+                        <div class="option">Модный и яркий</div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn" id="prev3">Назад</button>
+                        <button class="btn next-btn" id="next3" disabled>Далее</button>
+                    </div>
+                </div>
+
+                <div class="question" id="question4">
+                    <h3>Как ты относишься к риску?</h3>
+                    <div class="options">
+                        <div class="option">Избегаю опасных ситуаций</div>
+                        <div class="option">Рискую ради близких</div>
+                        <div class="option">Обожаю экстрим и адреналин</div>
+                        <div class="option">Просчитываю все варианты</div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn" id="prev4">Назад</button>
+                        <button class="btn next-btn" id="next4" disabled>Далее</button>
+                    </div>
+                </div>
+
+                <div class="question" id="question5">
+                    <h3>Что для тебя важнее всего в жизни?</h3>
+                    <div class="options">
+                        <div class="option">Честь и принципы</div>
+                        <div class="option">Любовь и семья</div>
+                        <div class="option">Дружба и верность</div>
+                        <div class="option">Свобода и приключения</div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn" id="prev5">Назад</button>
+                        <button class="btn next-btn" id="show-result" disabled>Узнать результат</button>
+                    </div>
+                </div>
+
+                <div class="result" id="result">
+                    <h2>Твой результат!</h2>
+                    <div class="result-character" id="result-character">
+                    </div>
+                    <button class="btn" id="restart-btn">Пройти тест еще раз</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2025 Сага Сумерки. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/scripts/test.js"></script>
+</body>
+</html>
